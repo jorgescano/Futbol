@@ -1,0 +1,12 @@
+﻿[
+  {
+    "outputFile": "Content/app/common.css",
+    "inputFile": "Content/app/common.less",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/app/dark.css",
+    "inputFile": "Content/app/dark.less",
+    "sourceMap": false
+  }
+]

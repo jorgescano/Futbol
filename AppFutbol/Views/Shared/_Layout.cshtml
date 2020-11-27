@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlinderos - @ViewBag.Title</title>
+    @Styles.Render("~/Content/libraries")
+    @Styles.Render("~/Content/app")
+</head>
+<body class="dark-mode">
+    <nav class="navbar fixed-bottom">
+        <div title="Jugadores" class="nav-item col-4 text-center" onclick="viewManagement.common.setHref('Index')">
+            <span class="fas fa-users"></span>
+        </div>
+        <div title="Partidos" class="nav-item col-4 text-center" onclick="viewManagement.common.setHref('Matches')">
+            <span class="fas fa-calendar-day"></span>
+        </div>
+        <div title="Modo Oscuro" class="nav-item col-4 text-center" onclick="viewManagement.common.toggleDarkMode()">
+            <span class="fas fa-adjust mr-2"></span>
+            <span class="custom-control custom-switch d-inline-block">
+                <input type="checkbox" id="switch-theme" class="custom-control-input">
+                <label class="custom-control-label" for="switch-theme"></label>
+            </span>
+        </div>
+    </nav>
+    <div class="text-center">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/libraries")
+    @Scripts.Render("~/bundles/app")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

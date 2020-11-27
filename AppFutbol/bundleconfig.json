@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "Scripts/app/common.min.js",
+    "inputFiles": [
+      "Scripts/app/common.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/app/index.min.js",
+    "inputFiles": [
+      "Scripts/app/index.js"
+    ]
+  }
+]
